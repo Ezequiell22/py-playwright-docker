@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  backend:
+    build:
+      context: ../app
+    image: $BACKEND_IMAGE
+    environment:
+      URL_CALCULO: $URL_CALCULO
+      URL_BASE: $URL_BASE
+      URL_BUSCA_NCM: $URL_BUSCA_NCM
+      URL_RESULTADO: $URL_RESULTADO
+      SERVER: $SERVER
+      DATABASE: $DATABASE
+      SENHA_DB: $SENHA_DB
+      USUARIO_DB: $USUARIO_DB
